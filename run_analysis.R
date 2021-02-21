@@ -137,5 +137,5 @@ Now that we have a single data set, we will use the Tidy program to create a dat
 ## [68] "Subject"
 
 Data2 <-aggregate(. ~Subject + Activity, singleDataSet, mean)
-Data2 <-Data2[order(Data$2Subject,Data2$Activity),]
+Data2 <-Data2[order(Data2$Subject,Data2$Activity),]
 write.table(Data2, file = "TidyDataSetProject4.txt", row.name=FALSE)
